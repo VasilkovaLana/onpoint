@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    margin: 0 auto;
+    color: #4c4f65;
+    font-family: 'GothaProReg',Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color:#4c4f65;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    padding: 0;
+    margin: 0;
+}
+
+main,
+header,
+section,
+footer { 
+    max-width: 1920px;
+    width: 100%; 
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+input,button {
+    outline: none;
+    padding: 0;
+    margin:0;
+    border: none;
+    background: none;
+}
+
+@font-face {
+    font-family: 'GothaProReg';
+    src: url('fonts/GothaProReg.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('fonts/Lato-Regular.ttf');
+    font-weight: normal;
+}

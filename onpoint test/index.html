@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Слайдер</title>
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <script src="script.js" async></script>
+</head>
+<body>
+    <main>
+        <div class="slideshow-wrapper">
+            <div class="slideshow">
+                <div class="slide__item  slide__first">
+                    <h1 class="slide__first-title">
+                        Всегда ли цели терапии СД2 на поверхности?
+                    </h1>
+                    <div class="slide__first-pulse">
+                        <div class="pulse"></div>
+                    </div>
+                    <div class="slide__first-pulse">
+                        <div class="pulse"></div>
+                    </div>
+                    <div class="slide__first-pulse">
+                        <div class="pulse"></div>
+                    </div>
+                    <div class="slide__first-pulse">
+                        <div class="pulse"></div>
+                    </div>
+                    <div class="arrow-next" onclick="currentSlide(1)"></div>
+                </div>
+
+                <div class="slide__item slide__second">
+                    <h2 class="slide__second-title">
+                        Основа терапии — патогенез СД2
+                    </h2>
+                    <div class="slide__second-icon"></div>
+                    <div class="slide__second-icon"></div>
+                    <div class="slide__second-icon"></div>
+                    <div class="slide__second-icon"></div>
+                    <div class="arrow-next" onclick="currentSlide(2)"></div>
+                </div>
+
+                <div class="slide__item slide__third">
+                    <div class="slide__third-item">
+                        <h2 class="slide__third-subtitle">Звенья патогенеза СД2</h2>
+                        <img src="img/tab01.png" alt="table" class="slide__third-image">
+                        <div class="slide__third-icon"></div>
+                        <div class="slide__third-icon"></div>
+                        <div class="slide__third-icon"></div>
+                    </div>
+                    <div class="slide__third-item">
+                        <h2 class="slide__third-subtitle">Смертельный октет</h2>
+                        <img src="img/tab02.png" alt="table" class="slide__third-image">
+                        <div class="slide__third-icon"></div>
+                        <div class="slide__third-icon"></div>
+                        <div class="slide__third-icon"></div>
+                    </div>
+                    <div class="slide__third-item">
+                        <h2 class="slide__third-subtitle">Звенья патогенеза СД2</h2>
+                        <img src="img/tab03.png" alt="table" class="slide__third-image">
+                        <div class="slide__third-icon"></div>
+                        <div class="slide__third-icon"></div>
+                        <div class="slide__third-icon"></div>
+                    </div>
+
+                    <div class="slide__third-navigation">
+                        <input type="range" min="0" max="100" value="0" step="1" onInput="sliderChange(this.value)" class="progress-bar">
+                        <div class="progress-bar__info">
+                            <span>1998</span>
+                            <span>2009</span>
+                            <span>2016</span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="links">
+                    <div onclick="currentSlide(0)" class="links__item active"></div>
+                    <div onclick="currentSlide(1)" class="links__item"></div>
+                    <div onclick="currentSlide(2)" class="links__item"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
